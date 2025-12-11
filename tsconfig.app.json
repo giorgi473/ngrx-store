@@ -8,7 +8,7 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
+, "src/app/pages/cart/store/cart-featur.ets"  ],
   "exclude": [
     "src/**/*.spec.ts"
   ]
