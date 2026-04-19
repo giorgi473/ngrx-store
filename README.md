@@ -1,5 +1,11 @@
 # NgrxStore
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" />
+  <img src="https://img.shields.io/badge/NgRx-BA2BD2?style=for-the-badge&logo=reactivex&logoColor=white" alt="NgRx" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+</p>
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.2.
 
 ## Development server
