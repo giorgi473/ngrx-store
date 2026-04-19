@@ -23,7 +23,7 @@ export class MyStorage {
 
   getUserId(): number | null {
     const token = this.getItem('ngrxstore_token');
-    if(!token) {
+    if (!token) {
       return null;
     }
     const payload = extractToken(token);

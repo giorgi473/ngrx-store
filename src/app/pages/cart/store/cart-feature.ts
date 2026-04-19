@@ -65,8 +65,8 @@ export const cartFeature = createFeature({
       items:
         quantity > 0
           ? state.items.map((item) =>
-              item.product.id === productId ? { ...item, quantity } : item
-            )
+            item.product.id === productId ? { ...item, quantity } : item
+          )
           : state.items.filter((item) => item.product.id !== productId),
     })),
 

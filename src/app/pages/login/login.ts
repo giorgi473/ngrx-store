@@ -79,7 +79,7 @@ export class Login {
   onSubmit(event: Event) {
     event.preventDefault();
     if (this.loginForm().valid()) {
-        this.store.dispatch(authActions.login(this.loginForm().value()));
+      this.store.dispatch(authActions.login(this.loginForm().value()));
     } else {
       console.log('Form is invalid');
     }

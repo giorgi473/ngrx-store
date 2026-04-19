@@ -38,7 +38,7 @@ export class Button {
   readonly size = input<ButtonSize>('md');
   readonly disabled = input<boolean | undefined>(false);
 
-  protected readonly hostClasses = computed(()=> {
+  protected readonly hostClasses = computed(() => {
     const base = 'inline-flex cursor-pointer items-center justify-center rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-white dark:ring-offset-slate-900';
     const variantClass = variantClasses[this.variant()];
     const sizeClass = this.variant() === 'icon' ? iconSizeClasses[this.size()] : sizeClasses[this.size()];
