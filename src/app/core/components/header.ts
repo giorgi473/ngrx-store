@@ -45,7 +45,7 @@ import { authActions } from '../../shared/store/auth-actions';
           >
             <lucide-icon [img]="icons.ShoppingCart" class="size-4" />
             <span
-              class="absolute -top-1 -right-1 size-5 flex items-center justify-center bg-amber-500 text-xs font-medium rounded-full"
+              class="absolute -top-1 -right-1 size-5 flex items-center justify-center bg-red-500 text-xs font-medium rounded-full"
             >
               {{ cartItemCount() }}
             </span>
