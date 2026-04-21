@@ -7,7 +7,7 @@ import { Github, LucideAngularModule, Twitter } from "lucide-angular";
   template: `
     <div class="w-full px-4 py-6 bg-slate-800 text-slate-400 mt-auto">
       <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-sm">&copy; 2025 FakeStore. All rights reserved.</p>
+        <p class="text-sm">&copy; 2026 FakeStore. All rights reserved.</p>
 
         <nav aria-label="Footer navigation">
           <ul class="flex items-center gap-6 text-sm">
