@@ -40,6 +40,7 @@ import { CurrencyPipe } from "@angular/common";
           appButton
           size="sm"
           type="button"
+          [attr.aria-label]="'Add ' + product().title + ' to cart'"
           (click)="addToCart.emit(product())"
         >
           Add to Cart
@@ -52,6 +53,7 @@ import { CurrencyPipe } from "@angular/common";
   },
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
+/** Displays a single product with its image, rating, price, and an add-to-cart action. */
 export class ProductCard {
   readonly icons = { Star };
   readonly product = input.required<Product>();
