@@ -63,12 +63,13 @@ import { toSignal } from '@angular/core/rxjs-interop';
 })
 export class Login {
   loginModel = signal({
-    username: 'johnd',
-    password: 'm38rmF$',
+    username: '',
+    password: '',
   });
 
   loginForm = form(this.loginModel, (rootPath) => {
     required(rootPath.username, { message: 'Username is required' });
+    minLength(rootPath.username, 3, { message: 'Username must be at least 3 characters long' });
     required(rootPath.password, { message: 'Password is required' });
     minLength(rootPath.password, 6, { message: 'Password must be at least 6 characters long' });
   });
@@ -81,7 +82,7 @@ export class Login {
     if (this.loginForm().valid()) {
       this.store.dispatch(authActions.login(this.loginForm().value()));
     } else {
-      console.log('Form is invalid');
+      console.warn('Login form submitted with invalid data. Please fix the errors and try again.');
     }
   }
 }
