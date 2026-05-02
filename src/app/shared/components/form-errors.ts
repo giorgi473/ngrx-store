@@ -4,9 +4,10 @@ import { FieldState } from "@angular/forms/signals";
 @Component({
   selector: "app-form-errors",
   template: `
-    @if(shouldShowError()) {
-      @for(error of control().errors(); track error.kind) {
-        <small class="text-sm block text-red-500 mt-1">{{error.message}}</small>
+    @if (shouldShowError()) {
+      @let firstError = firstErrorMessage();
+      @if (firstError) {
+        <small class="text-sm block text-red-500 mt-1">{{ firstError }}</small>
       }
     }
   `,
@@ -16,6 +17,11 @@ export class FormErrors {
 
   protected readonly shouldShowError = computed(() => {
     const field = this.control();
-    return !field.valid() && field.touched();
-  })
+    return !field.valid() && (field.touched() || field.dirty());
+  });
+
+  protected readonly firstErrorMessage = computed(() => {
+    const errors = this.control().errors();
+    return errors.length > 0 ? errors[0].message : null;
+  });
 }
