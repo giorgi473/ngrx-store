@@ -37,9 +37,9 @@ import { authActions } from '../../shared/store/auth-actions';
             id="email"
             type="email"
             [field]="registerForm.email"
-            autocomplete="username"
+            autocomplete="email"
             class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-shadow"
-            placeholder="Enter your username"
+            placeholder="Enter your email"
           />
           <app-form-errors [control]="registerForm.email()" />
         </div>
@@ -67,9 +67,9 @@ import { authActions } from '../../shared/store/auth-actions';
             id="confirmPassword"
             type="password"
             [field]="registerForm.confirmPassword"
-            autocomplete="current-password"
+            autocomplete="new-password"
             class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-shadow"
-            placeholder="Enter your password"
+            placeholder="Confirm your password"
           />
           <app-form-errors [control]="registerForm.confirmPassword()" />
         </div>
