@@ -19,7 +19,6 @@ import { MyStorage } from '../../shared/services/storage';
     </div>
     } @else if(profile()) { @let userProfile = profile();
     <div class="grid gap-6 md:grid-cols-3">
-      <!-- Profile Card -->
       <div class="md:col-span-1">
         <div class="bg-white rounded-xl shadow-md p-6 text-center">
           <div
