@@ -34,10 +34,7 @@ import { MyStorage } from '../../shared/services/storage';
           <p class="text-slate-500">&#64;{{ userProfile?.username }}</p>
         </div>
       </div>
-
-      <!-- Details Section -->
       <div class="md:col-span-2 space-y-6">
-        <!-- Contact Information -->
         <div class="bg-white rounded-xl shadow-md p-6">
           <h3 class="text-lg font-semibold text-slate-900 mb-4">Contact Information</h3>
           <div class="space-y-4">
@@ -50,7 +47,6 @@ import { MyStorage } from '../../shared/services/storage';
                 <p class="font-medium text-slate-900">{{ userProfile?.email }}</p>
               </div>
             </div>
-
             <div class="flex items-center gap-3">
               <div class="size-10 rounded-lg bg-green-100 flex items-center justify-center">
                 <lucide-icon [img]="icons.Phone" class="size-5 text-green-600" />
@@ -60,7 +56,6 @@ import { MyStorage } from '../../shared/services/storage';
                 <p class="font-medium text-slate-900">{{ userProfile?.phone }}</p>
               </div>
             </div>
-
             <div class="flex items-center gap-3">
               <div class="size-10 rounded-lg bg-amber-100 flex items-center justify-center">
                 <lucide-icon [img]="icons.User" class="size-5 text-amber-600" />
@@ -72,8 +67,6 @@ import { MyStorage } from '../../shared/services/storage';
             </div>
           </div>
         </div>
-
-        <!-- Address -->
         <div class="bg-white rounded-xl shadow-md p-6">
           <h3 class="text-lg font-semibold text-slate-900 mb-4">Address</h3>
           <div class="flex items-start gap-3">
