@@ -18,8 +18,6 @@ export const cartFeature = createFeature({
   name: 'cart',
   reducer: createReducer(
     initialCartState,
-
-    // Load cart
     on(cartActions.load, (state) => ({
       ...state,
       loading: true,
@@ -37,8 +35,7 @@ export const cartFeature = createFeature({
       loading: false,
       error,
     })),
-
-    // Add to cart
+    
     on(cartActions.addToCartSuccess, (state, { product }) => {
       const existingItem = state.items.find((item) => item.product.id === product.id);
       if (existingItem) {

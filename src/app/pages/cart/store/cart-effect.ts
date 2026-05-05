@@ -35,8 +35,6 @@ export const addToCartEffect = createEffect(
   }
 );
 
-// very import one
-
 export const persistCartEffect = createEffect(
   (actions$ = inject(Actions), storage = inject(MyStorage), store = inject(Store)) => {
     return actions$.pipe(

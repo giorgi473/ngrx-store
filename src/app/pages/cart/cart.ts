@@ -14,7 +14,6 @@ import { cartActions } from './store/cart-actions';
   template: `
     <div class="py-8 max-w-4xl mx-auto">
       <h1 class="text-3xl font-bold text-slate-900 mb-8">Shopping Cart</h1>
-      <!-- Loading -->
 
       @if(loading()) {
       <div class="flex items-center justify-center h-64">
